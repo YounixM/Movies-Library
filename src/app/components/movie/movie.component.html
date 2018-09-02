@@ -1,0 +1,29 @@
+<section class="jumbotron text-center">
+  <div class="container" *ngIf="movie">
+    <h1 class="jumbotron-heading"> {{movie.movie_title}} </h1>
+    <p class="lead text-muted"> {{movie.genres}} </p>
+
+    <div class="movie-details my-5">
+      <p> Director :
+        <strong> {{movie.director_name}} </strong>
+      </p>
+      <p> Cast :
+        <strong> {{movie.actor_1_name}} , {{movie.actor_2_name}} </strong>
+      </p>
+      <p> Content Rating :
+        <strong> {{movie.content_rating}} </strong>
+      </p>
+      <p> Country :
+        <strong> {{movie.country}} </strong>
+      </p>
+      <p> Language :
+        <strong> {{movie.language}} </strong>
+      </p>
+
+    </div>
+    <p class="my-5">
+      <a routerLink="/movies" class="btn btn-cta my-2"> Back To Movies </a>
+      <a href="{{movie.movie_imdb_link}}" target="_blank" class="btn btn-cta my-2"> View on IMDB </a>
+    </p>
+  </div>
+</section>

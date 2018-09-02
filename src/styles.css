@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --jumbotron-padding-y: 3rem;
+  }
+  
+  .jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 2);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+  }
+  
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+  
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  footer p {
+    margin-bottom: .25rem;
+  }
+
+  .btn-cta{
+    color: black;
+    margin-right: 5px;
+    background : white;
+    border : 1px solid black !important;
+    min-width: 7.75rem;
+    border-radius: 0;
+}
+.btn-cta:hover{
+    transform: translate(0,-2px);
+    opacity: .85;
+}
+
+@media screen and (max-width : 768px) {
+    .btn-group{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .btn-group .btn{
+        margin-top: 5px;
+    }
+}
